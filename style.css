@@ -11,6 +11,7 @@ html{
 
 body{
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /*Cabeçalho e Menu superior*/
@@ -84,7 +85,7 @@ main > section {
     padding-top: 15vh;
 }
 
-/*Config da primeira section*/
+/*Configuração da section parte 1*/
 #parte1{
     background: rgba(0, 0, 0, 0.9) url('midia/background/fundo-ganso.jpg');
     background-blend-mode: darken;
@@ -112,7 +113,7 @@ main > section {
     font-size: 1.2em;
 }
 
-.p1-texto > a {
+.botão {
     background-color: transparent;
     border: 2px solid #B73DDB;
     color: #DA61FF;
@@ -132,7 +133,7 @@ main > section {
 
 /*Animação do botão "venha conferir" da section 1*/
 
-.p1-texto > a::before{
+.botão::before{
     content: " ";
     bottom: 0;
     left: 0;
@@ -145,7 +146,7 @@ main > section {
     transition: 1s ease-out;
 }
 
-.p1-texto > a:hover::before{
+.botão:hover::before{
     width: 100%;
 }
 
@@ -196,4 +197,167 @@ main > section {
 .Destaque {
     color: #B73DDB;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+/*Configuração da section parte 2*/
+
+#parte2{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), #1D1D1D, #1D1D1D);
+    display: flex;
+    font-size: 1.3em;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    
+}
+
+.about-foundry{
+    background-color: white;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #da61ff7c;
+    text-shadow: 1px 1px 1px #b63ddb67;
+    margin: 0 auto;
+
+}
+
+.about-foundry > img{
+    width: 300px;
+}
+
+.obs{
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+.descrição{
+    background-color: white;
+    margin-left: 19px;
+    padding: 10px;
+    width: 30%;
+    height: 330px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px #da61ff7c;
+    margin-right: 215px;
+}
+
+.descrição > h2{
+    text-align: center;
+}
+
+.descrição > p{
+    text-indent: 1em;
+}
+
+.descrição > ul{
+    list-style: none;
+    text-align: left;
+}
+
+.descrição > ul > li {
+    padding-top: 5px;
+}
+
+/*Edit botão Conheça o Foundry VTT*/
+
+#parte2 > .descrição > .botão {
+    font-size: 1.1em;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+/*Configuração da Section parte 3*/
+
+#parte3{
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#parte3 > aside{
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    width: 30%;
+    margin: 0 30px;
+    box-shadow: 1px 1px 1px #da61ff7c;
+}
+
+#parte3 > aside > .destaque{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/*Config caixa parte 3*/
+
+.altanimação{
+    height: 345px;
+}
+
+.altrolagem{
+    height: 495px;
+}
+
+.altficha{
+    height: 445px;
+}
+
+/*Config imagem parte 3*/
+
+.imganimação{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.imgrolagem{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.imgficha{
+    width: 90%;
+    border-radius: 15px;
+}
+
+/*Animação zoom imagem parte 3*/
+
+.imganimação:hover{
+    animation-name: zoomIn2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.imgficha:hover{
+    animation-name: zoomIn2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.imgrolagem:hover{
+    animation-name: zoomIn2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn2 {
+    from{
+
+    }
+
+    to{
+        transform: scale(1.3);
+    }
+}
+
+/*Configuração do botão Veja os Livros parte 3*/
+
+#parte3 > .altanimação > .botão{
+
 }
