@@ -127,7 +127,6 @@ main > section {
     font-size: 2em;
     font-weight: bolder;
     position: relative;
-    transition: 1.5s;
     z-index: 1;
 }
 
