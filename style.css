@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Varela+Round&display=swap');
+
+
+*{
+    font-family:  'Lato', sans-serif;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/*Cabeçalho e Menu superior*/
+
+.Menu-Superior{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 6vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+}
+
+.Menus {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-right: 30px;
+    gap: 1.2em;
+    font-size: 1.5em;
+}
+
+.Menu-Titulo{
+    text-transform: uppercase;
+    margin: center;
+    padding-left: 1em;
+    letter-spacing: 0.2em;
+    font-family:  'Varela Round', sans-serif;
+    color: #B73DDB;
+}
+
+.Menus > li > a {
+    text-decoration: none;
+}
+
+.Menus > li > a{
+    color: inherit;
+    position: relative;
+    transform: 2ms ease-in;
+    color: white;
+    transition: color 1.5s;
+}
+
+/*Animação do menu superior*/
+
+.Menus > li > a:hover{
+    color: #f8e2ff;
+}
+
+.Menus > li > a::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: #B73DDB;
+    transition: all 1.5s ease;
+}
+
+.Menus > li > a:hover::before{
+    width: 100%;
+}
+
+/*Corpo*/
+/*Config padrão das sections*/
+main > section {
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+
+/*Config da primeira section*/
+#parte1{
+    background: rgba(0, 0, 0, 0.9) url('midia/background/fundo-ganso.jpg');
+    background-blend-mode: darken;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.p1-texto{
+    text-align: left;
+    top: 0;
+}
+
+.p1-texto > h2{
+    line-height: 2px;
+    font-size: 3em;
+}
+
+.p1-texto > p{
+    font-size: 1.2em;
+}
+
+.p1-texto > a {
+    background-color: transparent;
+    border: 2px solid #B73DDB;
+    color: #DA61FF;
+    display: inline-block;
+    margin: 50px auto;
+    border-radius: 35px;
+    vertical-align: middle;
+    height: 30px;
+    padding: 30px 64px;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif ;
+    font-size: 2em;
+    font-weight: bolder;
+    position: relative;
+    transition: 1.5s;
+    z-index: 1;
+}
+
+/*Animação do botão "venha conferir" da section 1*/
+
+.p1-texto > a::before{
+    content: " ";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 90px;
+    border-radius: 35px;
+    background-color: #b63ddb42;
+    z-index: -1;
+    transition: 1s;
+}
+
+.p1-texto > a:hover::before{
+    width: 100%;
+}
+
+/*Configuração da imagem section 1*/
+
+.p1-imagem > img{
+    width: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: right;
+    animation-name: zoomOut;
+    animation-duration: 1s;
+}
+
+.p1-imagem > img:hover{
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+/*Animação de zoom da imagem section 1*/
+
+@keyframes zoomIn{
+    from{
+        border-radius: 50%;
+    }
+
+    to{
+        border-radius: 0%;
+        transform: scale(1.4);
+    }
+}
+
+@keyframes zoomOut{
+    from{
+        border-radius: 0%;
+        transform: scale(1.4);
+    }
+}
+
+    to{
+        border-radius: 50%;
+    }
+
+
+/*Destaque no texto com span*/
+.Destaque {
+    color: #B73DDB;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
