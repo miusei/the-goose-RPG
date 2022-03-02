@@ -143,7 +143,7 @@ main > section {
     border-radius: 35px;
     background-color: #b63ddb42;
     z-index: -1;
-    transition: 1s;
+    transition: 1s ease-out;
 }
 
 .p1-texto > a:hover::before{
