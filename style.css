@@ -12,6 +12,7 @@ html{
 body{
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: #1D1D1D;
 }
 
 /*Cabeçalho e Menu superior*/
@@ -213,7 +214,7 @@ main > section {
 .about-foundry{
     background-color: white;
     width: 30%;
-    height: 25%;
+    height: 500px;
     text-align: center;
     border-radius: 25px;
     padding: 10px;
@@ -260,7 +261,7 @@ main > section {
     padding-top: 5px;
 }
 
-/*Edit botão Conheça o Foundry VTT*/
+/*Edit botão Conheça o Foundry VTT Section 2*/
 
 #parte2 > .descrição > .botão {
     font-size: 1.1em;
