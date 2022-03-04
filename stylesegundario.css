@@ -1,0 +1,51 @@
+section{
+    background-color: white;
+    border-radius: 5px;
+    width: 80%;
+    margin: 7em auto 1em auto;
+    text-align: center;
+    padding: 0.3em;
+    box-shadow: 1px 1px 1px #da61ff7c;
+}
+
+section > p{
+    text-align: left;
+    text-indent: 1.5em;
+    font-size: 1.1em;
+    padding: 0em 0.3em 0em 0.3em;
+
+}
+
+section > picture {
+    width: 40%;
+    border-radius: 1em;
+}
+
+section > picture > img{
+    width: 40%;
+    border-radius: 1em;
+}
+
+/*config lista*/
+
+section > ol {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+/*Video responsivo*/
+
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
