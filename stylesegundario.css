@@ -49,3 +49,14 @@ section > ol {
     width: 100%;
     height: 100%;
 }
+
+/*imagem ganso da aba contato*/
+
+.discganso{
+    width: 100%;
+}
+
+.discgansolink{
+    text-align: center;
+    padding-left: 0;
+}
