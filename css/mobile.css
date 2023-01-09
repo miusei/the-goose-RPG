@@ -1,0 +1,229 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* Menu responsivo */
+    .material-symbols-rounded {
+        display: none;
+    }
+
+    .Menus {
+        display: flex;
+    }
+
+    .Menu-Titulo {
+        display: block;
+    }
+
+     /* Menu */
+
+.Menu-Superior {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    top: 0;
+    font-size: 0.6em;
+    }
+
+.Menus {
+    display: flex;
+    justify-content: center;
+    font-size: 2em ;
+}
+
+.Menus > li > a{
+    padding: 0;
+}
+
+/* parte 1 */
+
+#parte1 {
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.p1-texto {
+    text-align: center;
+}
+
+.p1-texto > h2{
+    font-size: 2em;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Menu */
+    
+    .Menu-Superior {
+        font-size: 0,6em;
+        }
+    
+        .Menus {
+            gap: 1.2em;
+            font-size: 2.5em;
+        }
+    
+        .Menu-Titulo{
+            padding-left: 1em;
+            letter-spacing: 0.2em;
+            font-size: 3em;
+            
+        }
+    
+
+    /* parte 1 */
+
+    #parte1{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        top: 0;
+    }
+
+    .p1-texto{
+        text-align: left;
+        top: 0;
+        align-items: center;
+    }
+    
+    .p1-texto > h2{
+        line-height: 0.2em;
+        font-size: 1.7em;
+    }
+    
+    .p1-texto > p{
+        font-size: 1.2em;
+    }
+
+    .p1-imagem {
+        display: flex;
+    }
+
+    /* Parte 2 */
+
+    #parte2 {
+        display: flex;
+        font-size: 1.3em;
+    }
+
+    .about-foundry{
+        background-color: white;
+        height: 25%;   
+    }
+
+    .descrição{
+        background-color: white;
+        padding: 10px;
+        height: 25%;
+    }
+    
+
+    /* Parte 3 */
+
+    #parte3{
+        display: flex;
+    }
+
+    #parte3 > aside {
+        margin: 1em;
+
+    }
+
+    /* Altura */
+
+    .altanimação{
+        height: 25%;
+    }
+    
+    .altrolagem{
+        height: 25%;
+    }
+    
+    .altficha{
+        height: 25%;
+    }
+
+  /* Botao area 3 */
+  
+  .botaop3{
+    display: none;
+  }
+
+  #botãoDESKTOP{
+    display: block;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+/* menu */
+
+.Menu-Superior {
+    font-size: 0,9em;
+
+    }
+
+    .Menus {
+        gap: 1.2em;
+        font-size: 2.5em;
+    }
+
+    .Menu-Titulo{
+        padding-left: 1em;
+        letter-spacing: 0.2em;
+        font-size: 3em;
+        
+    }
+
+    /* Parte 1 */
+
+    .p1-texto > h2{
+        line-height: 2px;
+        font-size: 3em;
+    }
+    
+    .p1-texto > p{
+        font-size: 1.2em;
+    }
+    
+    /* Parte 4 */
+
+    #parte4 > div{
+        background-color: white;
+        border-radius: 25px;
+        width: 36%;
+        margin: auto;
+        padding: 1px;
+        box-shadow: 1px 1px 1px #da61ff7c;
+    }
+
+
+    #parte4 > aside{
+        background-color: white;
+        border-radius: 25px;
+        width: 80%;
+    }
+
+    .disclaimer{
+        padding: 0em;
+    }
+    
+    .disclaimer > p {
+        margin: 0em;
+        padding: 0em;
+    }
+
+    .livros > a > img{
+        width: 50%; 
+    }
+
+
+    
+}

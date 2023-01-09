@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/mobile.css">
     <meta name="description" content="Site focado na divulgação do RPG de mesa que usa o sistema Dungeons And Dragons 5 edição">
     <title>The Goose RPG</title>
+    
 </head>
 <body>
 
     <header class="Menu-Superior">
         <h1 class="Menu-Titulo">The Goose RPG</h1>
+        <span class="material-symbols-rounded" onclick="clickMenu()">menu</span>
         <nav>
             <ul class="Menus">
                 <li><a href="index.html">Home</a></li>
@@ -51,7 +54,7 @@
                 <h2>E como eu posso <span class="Destaque">jogar?</span></h2>
                 <p>Atualmente eu tenho 2 mesas em andamento com 5 jogadores cada, então assim que liberar vaga você será muito mais que bem-vindo!</p>
                 <ul>
-                    <li><span class="Destaque">Sistema:</span> Dungeons and dragons 5e</li>
+                    <li><span class="Destaque">Sistema:</span> Pathfinder 2 edição</li>
                     <li><span class="Destaque">Tipo de mesa:</span> Semanal</li>
                     <li><span class="Destaque">Data:</span> Quarta-Feira as 19:30h ~ 22:30h</li>
                     <li><span class="Destaque">Data:</span> Segunda-Feira as 19:30h ~ 22:30h</li>
@@ -72,13 +75,17 @@
                 <h2><span class="Destaque">Animações</span></h2>
                 <img class="imganimação" src="midia/foundry/efeitos-automaticos.jpg" alt="Efeito de magia no token ao usar magiass">
                 <p class="destaque">Clique na imagem para ampliar</p>
-                <a class="botão" href="#parte4">Veja os Livros</a>
+                <a class="botão" id="botãoDESKTOP" href="#parte4">Veja os Livros</a>
             </aside>
 
             <aside class="altficha">
                 <h2><span class="Destaque">Ficha Própria</span></h2>
                 <img class="imgficha" src="midia/foundry/ficha.jpg" alt="Ficha de personagem do jogador">
                 <p class="destaque">Clique na imagem para ampliar</p>
+            </aside>
+
+            <aside class="botaop3">
+                <a class="botão" href="#parte4">Veja os Livros</a>
             </aside>
         </section>
 
@@ -88,21 +95,18 @@
             </div>
             <aside>
                     <picture class="livros">
-                        <a href="https://www.amazon.com.br/Dungeons-Dragons-Players-Handbook-Portugu%C3%AAs/dp/B085S6W8PZ/ref=sr_1_1?keywords=livro+do+jogador+d%26d+5e+portugu%C3%AAs&qid=1646319266&sprefix=livro+do+jogador%2Caps%2C221&sr=8-1&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678" rel="nofollow" target="_blank" ><source media="(max-width: 400px)" srcset="midia/foundry/livros/player-p.jpg"></a>
-                        <a href="https://www.amazon.com.br/Dungeons-Dragons-Players-Handbook-Portugu%C3%AAs/dp/B085S6W8PZ/ref=sr_1_1?keywords=livro+do+jogador+d%26d+5e+portugu%C3%AAs&qid=1646319266&sprefix=livro+do+jogador%2Caps%2C221&sr=8-1&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678" rel="nofollow" target="_blank" ><img src="midia/foundry/livros/player.jpg" alt="Capa do livro do jogador de dungeons and dragons 5 edição"></a>
+                        <a href="https://paizo.com/products/btq01zp3?Pathfinder-Core-Rulebook" rel="nofollow" target="_blank" ><source media="(max-width: 300px)" src="midia/livros/coreCELL.jpg"></a>
+                        <a href="https://paizo.com/products/btq01zp3?Pathfinder-Core-Rulebook" rel="nofollow" target="_blank" ><source media="(max-width: 700px)" src="midia/livros/coreTABLET.jpg"></a>
+                        <a href="https://paizo.com/products/btq01zp3?Pathfinder-Core-Rulebook" rel="nofollow" target="_blank" ><img src="midia/livros/corePC.jpg" alt="Capa do livro do Pathfinder 2 edição"></a>
                     </picture>
                     <picture class="livros">
-                        <a href="https://www.amazon.com.br/Cauldron-Everything-Expansion-Dungeons-Dragons/dp/0786967021/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=4RNH8L2WH0FH&keywords=tasha+d%26d+5e&qid=1646319303&sprefix=tasha+d%26d+5e+%2Caps%2C160&sr=8-1&ufe=app_do%3Aamzn1.fos.4bddec23-2dcf-4403-8597-e1a02442043d" rel="nofollow" target="_blank" ><source media="(max-width: 400px)" srcset="midia/foundry/livros/tasha-p.jpg"></a>
-                        <a href="https://www.amazon.com.br/Cauldron-Everything-Expansion-Dungeons-Dragons/dp/0786967021/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=4RNH8L2WH0FH&keywords=tasha+d%26d+5e&qid=1646319303&sprefix=tasha+d%26d+5e+%2Caps%2C160&sr=8-1&ufe=app_do%3Aamzn1.fos.4bddec23-2dcf-4403-8597-e1a02442043d" rel="nofollow" target="_blank" ><img src="midia/foundry/livros/tasha.jpg" alt="Capa do livro Tasha Couldron of everyting do dungeons and dragons 5 edição"></a>
+                        <a href="https://paizo.com/products/btq023ih?Pathfinder-Advanced-Players-Guide" rel="nofollow" target="_blank" ><source media="(max-width: 300px)" src="midia/livros/advCELL.jpg"></a>
+                        <a href="https://paizo.com/products/btq023ih?Pathfinder-Advanced-Players-Guide" rel="nofollow" target="_blank" ><source media="(max-width: 700px)" src="midia/livros/advTABLET.jpg"></a>
+                        <a href="https://paizo.com/products/btq023ih?Pathfinder-Advanced-Players-Guide" rel="nofollow" target="_blank" ><img src="midia/livros/advPC.jpg" alt="Capa do livro do Pathfinder 2 edição"></a>
                     </picture>
-                    <picture class="livros">
-                        <a href="https://www.amazon.com.br/Mordenkainen-Presents-Monsters-Multiverse-Dungeons/dp/0786967870" rel="nofollow" target="_blank" ><source media="(max-width: 400px)" srcset="midia/foundry/livros/morde-p.jpg"></a>
-                        <a href="https://www.amazon.com.br/Mordenkainen-Presents-Monsters-Multiverse-Dungeons/dp/0786967870" rel="nofollow" target="_blank" ><img src="midia/foundry/livros/morde.jpg" alt="Capa do livro mordenkainen presents monsters of the multiverse do dungeons and dragons 5 edição"></a>
-                    </picture>
-                    <picture class="livros">
-                        <a href="https://www.amazon.com.br/Dungeons-Dragons-Xanathar-todas-Coisas/dp/8568059368/ref=sr_1_5?keywords=livro+do+jogador+d%26d+5e+portugu%C3%AAs&qid=1646319266&sprefix=livro+do+jogador%2Caps%2C221&sr=8-5&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678" rel="nofollow" target="_blank" ><source media="(max-width: 400px)" srcset="midia/foundry/livros/xanathar-p.jpg"></a>
-                        <a href="https://www.amazon.com.br/Dungeons-Dragons-Xanathar-todas-Coisas/dp/8568059368/ref=sr_1_5?keywords=livro+do+jogador+d%26d+5e+portugu%C3%AAs&qid=1646319266&sprefix=livro+do+jogador%2Caps%2C221&sr=8-5&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678" rel="nofollow" target="_blank" ><img src="midia/foundry/livros/xanathar.jpg" alt="Capa do livro Guia Xanathar para todas as coisas"></a>
-                    </picture>
+            </aside>
+            <aside class="disclaimer">
+                <p> <span class="Destaque">The Goose RPG</span> uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (paizo.com/communityuse). We are expressly prohibited from charging you to use or access this content. <span class="Destaque">The Goose RPG</span> is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit <a href="https://paizo.com/" rel="nofollow" target="_blank">paizo.com</a>.</p>
             </aside>
 
 
@@ -118,6 +122,6 @@
         </footer>
         </section>
     </main>
-<script src="animacao.js"></script>  
+<script src="js/menuclick.js"></script>
 </body>
 </html>
