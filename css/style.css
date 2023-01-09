@@ -302,10 +302,9 @@ main > section {
 
 #parte3{
     background-color: #1D1D1D;
-    display: inline-block;
+    display: block;
     margin: auto;
-    
-
+    align-items: center;
 }
 
 #parte3 > aside{
@@ -316,12 +315,12 @@ main > section {
     margin: 0.2em auto;
     box-shadow: 1px 1px 1px #da61ff7c;
     padding: 0.1em;
+    height: 30em;
 }
 
-#parte3 > aside > .destaque{
-    font-style: italic;
-    font-size: 0.8em;
-    padding-bottom: 0.5em;
+#parte3 > aside > h2 {
+    background-color: white;
+    width: 50%;
 }
 
 /*Config botão parte 3*/
@@ -338,42 +337,22 @@ main > section {
 
 /*Config imagem parte 3*/
 
-.imganimação{
-    width: 90%;
-    border-radius: 15px;
+.altrolagem{
+    background: url(../midia/foundry/rolagem-automatica.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.imgrolagem{
-    width: 90%;
-    border-radius: 15px;
+.altanimação{
+    background: url(../midia/foundry/efeitos-automaticos.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.imgficha{
-    width: 90%;
-    border-radius: 15px;
-}
-
-/*Animação zoom imagem parte 3*/
-
-.imganimação:hover{
-    animation-name: zoomIn2;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-.imgficha:hover{
-    animation-name: zoomIn2;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-.imgrolagem:hover{
-    animation-name: zoomIn2;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+.altficha{
+    background: url(../midia/foundry/ficha.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 @keyframes zoomIn2 {

@@ -85,6 +85,10 @@
         top: 0;
     }
 
+    #parte1 > aside{
+        margin: 2.5em;
+    }
+
     .p1-texto{
         text-align: left;
         top: 0;
@@ -109,6 +113,10 @@
     #parte2 {
         display: flex;
         font-size: 1.3em;
+    }
+
+    #parte2 > aside{
+        margin: 5em;
     }
 
     .about-foundry{
@@ -155,7 +163,7 @@
   }
 
   #botãoDESKTOP{
-    display: block;
+    display: none;
   }
 
 }
@@ -183,6 +191,11 @@
     }
 
     /* Parte 1 */
+
+    #parte1 > aside{
+        margin: 5em;
+    }
+
 
     .p1-texto > h2{
         line-height: 2px;
