@@ -52,6 +52,33 @@
     font-size: 2em;
 }
 
+/* parte 2 */
+
+#parte2 {
+    display: flex;
+    font-size: 1.3em;
+}
+
+#parte2 > aside {
+    margin: 2em;
+}
+
+.about-foundry{
+    background-color: white;
+    width: 35%;  
+}
+
+.about-foundry > img{
+    width: 13em;
+}
+
+.descrição{
+    background-color: white;
+    padding: 10px;
+    width: 35%;
+    height: 28em;
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
