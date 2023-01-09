@@ -57,6 +57,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+    /* Corpo */
+
+    main > section{
+        padding-top: 0vh;
+    }
+
     /* Menu */
     
     .Menu-Superior {
@@ -86,7 +92,7 @@
     }
 
     #parte1 > aside{
-        margin: 2.5em;
+        margin: auto;
     }
 
     .p1-texto{
@@ -104,10 +110,21 @@
         font-size: 1.2em;
     }
 
-    .p1-imagem {
-        display: flex;
-    }
+    /*Configuração da imagem section 1*/
 
+    .p1-imagem {
+        display: block;
+    }
+    
+
+    .p1-imagem > img{
+        width: 30em;
+        margin: auto 1em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: right;
+    }
+    
     /* Parte 2 */
 
     #parte2 {
@@ -192,11 +209,6 @@
 
     /* Parte 1 */
 
-    #parte1 > aside{
-        margin: 5em;
-    }
-
-
     .p1-texto > h2{
         line-height: 2px;
         font-size: 3em;
@@ -204,6 +216,12 @@
     
     .p1-texto > p{
         font-size: 1.2em;
+    }
+    
+    /*Configuração da imagem section 1*/
+
+    .p1-imagem > img{
+        width: 40em;
     }
     
     /* Parte 4 */

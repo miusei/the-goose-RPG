@@ -182,49 +182,6 @@ main > section {
     display: none;
 }
 
-.p1-imagem > img{
-    display: none;
-    width: 31em;
-    margin: auto;
-    border-radius: 50%;
-    display: flex;
-    justify-content: right;
-    animation-name: zoomOut;
-    animation-duration: 1s;
-}
-
-.p1-imagem > img:hover{
-    animation-name: zoomIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-/*Animação de zoom da imagem section 1*/
-
-@keyframes zoomIn{
-    from{
-        border-radius: 50%;
-    }
-
-    to{
-        border-radius: 0%;
-        transform: scale(1.4);
-    }
-}
-
-@keyframes zoomOut{
-    from{
-        border-radius: 0%;
-        transform: scale(1.4);
-    }
-}
-
-    to{
-        border-radius: 50%;
-    }
-
-
 /*Destaque no texto com span*/
 .Destaque {
     color: #B73DDB;
