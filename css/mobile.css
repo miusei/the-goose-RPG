@@ -79,6 +79,35 @@
     height: 28em;
 }
 
+/*===== pagina: Sobre o Foundry =====*/
+
+.videos{
+    width: 768px;
+}
+
+.boxVideo iframe {
+    width: 400px;
+    height: 224px;
+}
+
+/*===== pagina: Mundo =====*/
+
+.sectionMundo{
+    width: 768px;
+}
+
+/*===== pagina: Regras =====*/
+
+.sectionRegras{
+    width: 768px;
+}
+
+/*===== pagina: Contato =====*/
+
+.sectionContato{
+    width: 768px;
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -210,6 +239,13 @@
     display: none;
   }
 
+  /*===== pagina: Sobre o Foundry =====*/
+
+.boxVideo iframe {
+    width: 400px;
+    height: 224px;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -250,6 +286,13 @@
     .p1-imagem > img{
         width: 40em;
     }
+
+    /* Parte 2 */
+
+    #parte2 > aside{
+        width: 433px;
+        margin: auto;
+    }
     
     /* Parte 4 */
 
@@ -282,6 +325,11 @@
         width: 50%; 
     }
 
+    /*===== pagina: Sobre o Foundry =====*/
 
+    .boxVideo iframe {
+        width: 560px;
+        height: 315px;
+    }
     
 }
