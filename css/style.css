@@ -110,7 +110,6 @@ body{
 /*Config padrão das sections*/
 main > section {
     min-height: 100vh;
-    padding-top: 15vh;
 }
 
 /*Configuração da section parte 1*/
