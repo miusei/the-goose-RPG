@@ -1,3 +1,16 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+        /* parte 2 */
+
+        .about-foundry{
+            height: 570px;
+        }
+        
+        .descrição{
+            height: 510px;
+        }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
@@ -49,16 +62,6 @@
 
 .p1-texto > h2{
     font-size: 2em;
-}
-
-/* parte 2 */
-
-.about-foundry{
-    height: 570px;
-}
-
-.descrição{
-    height: 510px;
 }
 
 /* parte 4 */
