@@ -53,29 +53,18 @@
 
 /* parte 2 */
 
-#parte2 {
-    display: flex;
-    font-size: 1.3em;
-}
-
-#parte2 > aside {
-    margin: 2em;
-}
-
 .about-foundry{
-    background-color: white;
-    width: 35%;  
-}
-
-.about-foundry > img{
-    width: 13em;
+    height: 570px;
 }
 
 .descrição{
-    background-color: white;
-    padding: 10px;
-    width: 35%;
-    height: 28em;
+    height: 510px;
+}
+
+/* parte 4 */
+
+.disclaimer{
+    width: 650px;
 }
 
 /*===== pagina: Sobre o Foundry =====*/
@@ -179,45 +168,26 @@
         display: flex;
         justify-content: right;
     }
-    
-    /* Parte 2 */
 
-    #parte2 {
-        display: flex;
-        font-size: 1.3em;
-    }
+    /* parte 2 */
 
-    #parte2 > aside{
-        margin: 5em;
-    }
+.about-foundry{
+    width: 400px;
+    height: 515px;
+}
 
-    .about-foundry{
-        background-color: white;
-        height: 25%;   
-    }
+.descrição{
+    width: 370px;
+}
 
-    .descrição{
-        background-color: white;
-        padding: 10px;
-        height: 25%;
-    }
     
 
-    /* Altura */
+    /* parte 4 */
 
-    .altanimação{
-        height: 25%;
-    }
+.disclaimer{
+    width: 890px;
+}
     
-    .altrolagem{
-        height: 25%;
-    }
-    
-    .altficha{
-        height: 25%;
-    }
-
-
   /*===== pagina: Sobre o Foundry =====*/
 
 .boxVideo iframe {
@@ -264,44 +234,6 @@
 
     .p1-imagem > img{
         width: 40em;
-    }
-
-    /* Parte 2 */
-
-    #parte2 > aside{
-        width: 433px;
-        margin: auto;
-    }
-    
-    /* Parte 4 */
-
-    #parte4 > div{
-        background-color: white;
-        border-radius: 25px;
-        width: 36%;
-        margin: auto;
-        padding: 1px;
-        box-shadow: 1px 1px 1px #da61ff7c;
-    }
-
-
-    #parte4 > aside{
-        background-color: white;
-        border-radius: 25px;
-        width: 80%;
-    }
-
-    .disclaimer{
-        padding: 0em;
-    }
-    
-    .disclaimer > p {
-        margin: 0em;
-        padding: 0em;
-    }
-
-    .livros > a > img{
-        width: 50%; 
     }
 
     /*===== pagina: Sobre o Foundry =====*/
