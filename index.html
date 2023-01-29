@@ -75,22 +75,27 @@
 
         <section id="parte3">
 
-            <aside class="altrolagem">
-                <h2><span class="Destaque">Rolagens automaticas</span></h2>
-            </aside>
+            <div class="card" id="rolagem">
+                <div class="content">
+                    <h2>Rolagens Automaticas</h2>
+                    
+                </div>
+            </div>
 
-            <aside class="altanimação">
-                <h2><span class="Destaque">Animações</span></h2>
-                <a class="botão" id="botãoDESKTOP" href="#parte4">Veja os Livros</a>
-            </aside>
+            <div class="card" id="ficha">
+                <div class="content">
+                    <h2>Ficha Propria</h2>
+                    
+                </div>
+            </div>
 
-            <aside class="altficha">
-                <h2><span class="Destaque">Ficha Própria</span></h2>
-            </aside>
+            <div class="card" id="efeito">
+                <div class="content">
+                    <h2>Efeitos Automaticos</h2>
+                    
+                </div>
+            </div>
 
-            <aside class="botaop3">
-                <a class="botão" href="#parte4">Veja os Livros</a>
-            </aside>
         </section>
 
         <!-- Livros -->
@@ -140,5 +145,13 @@
     <!-- JavaScript -->
 
 <script src="js/menuclick.js"></script>
+
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+    });
+</script>
 </body>
 </html>

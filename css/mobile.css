@@ -203,17 +203,6 @@
     }
     
 
-    /* Parte 3 */
-
-    #parte3{
-        display: flex;
-    }
-
-    #parte3 > aside {
-        margin: 1em;
-
-    }
-
     /* Altura */
 
     .altanimação{
@@ -228,15 +217,6 @@
         height: 25%;
     }
 
-  /* Botao area 3 */
-  
-  .botaop3{
-    display: none;
-  }
-
-  #botãoDESKTOP{
-    display: none;
-  }
 
   /*===== pagina: Sobre o Foundry =====*/
 

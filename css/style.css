@@ -257,59 +257,69 @@ main > section {
 /*Configuração da Section parte 3*/
 
 #parte3{
-    background-color: #1D1D1D;
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 1;
+
 }
 
-#parte3 > aside{
-    background-color: white;
-    border-radius: 25px;
+#rolagem{
+    background-image: url(../midia/foundry/rolagem-automatica.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#ficha{
+    background-image: url(../midia/foundry/ficha.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#efeito{
+    background-image: url(../midia/foundry/efeitos-automaticos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+ .card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px #DA61FF;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px #DA61FF solid;
+    border-left: 1px #DA61FF solid;
+}
+
+#parte3 .card .content {
+    padding: 20px;
     text-align: center;
-    width: 90%;
-    margin: 0.2em auto;
-    box-shadow: 1px 1px 1px #da61ff7c;
-    padding: 0.1em;
-    height: 30em;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
-#parte3 > aside > h2 {
-    background-color: rgba(255, 255, 255, 0.829);
-    border-radius: 0px 5px 5px 0px;
-    width: 50%;
+#parte3 .card:hover .content{ 
+    transform: translateY(0px);
+    opacity: 1;
 }
 
-/*Config botão parte 3*/
-
-#parte3 > .botaop3 {
- background-color: transparent;
- box-shadow: 0px 0px 0px;
-}
-
-#botãoDESKTOP{
-    display: none;
-}
-
-
-/*Config imagem parte 3*/
-
-.altrolagem{
-    background: url(../midia/foundry/rolagem-automatica.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.altanimação{
-    background: url(../midia/foundry/efeitos-automaticos.jpg); 
-    background-size: cover;
-    background-position: center;
-}
-
-.altficha{
-    background: url(../midia/foundry/ficha.jpg);
-    background-size: cover;
-    background-position: center;
+#parte3 .card .content h2{
+    color: #731A8F;
+    background-color: white;
+    box-shadow: 2px 2px 5px #DA61FF;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1.7em;
 }
 
 
@@ -374,4 +384,5 @@ footer > p{
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 10;
 }
