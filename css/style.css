@@ -269,19 +269,19 @@ main > section {
 }
 
 #rolagem{
-    background-image: url(../midia/foundry/rolagem-automatica.jpg);
+    background-image: url(../midia/foundry/rolagem-automatica.webp);
     background-size: cover;
     background-position: center;
 }
 
 #ficha{
-    background-image: url(../midia/foundry/ficha.jpg);
+    background-image: url(../midia/foundry/ficha.webp);
     background-size: cover;
     background-position: center;
 }
 
 #efeito{
-    background-image: url(../midia/foundry/efeitos-automaticos.jpg);
+    background-image: url(../midia/foundry/efeitos-automaticos.webp);
     background-size: cover;
     background-position: center;
 }
