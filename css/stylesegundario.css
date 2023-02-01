@@ -67,6 +67,13 @@ section > ol {
     height: 150px;
 }
 
+
+/* Contato */
+
+#ContatoDisc{
+    margin: auto auto 10px auto;
+}
+
 /*imagem ganso da aba contato*/
 
 .discganso{
@@ -78,4 +85,77 @@ section > ol {
 .discgansolink{
     text-align: center;
     padding-left: 0;
+}
+
+/* FAQ */
+
+.sectionFAQ{
+    text-align: left;
+    margin: 5px auto;
+    width: 600px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.sectionFAQ > h1{
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px #da61ff7c;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.lista-item{
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px #da61ff7c;
+    width: 520px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.faq-titulo{
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    margin: auto;
+    color: #B73DDB;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+.faq-titulo::before{
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 24px;
+    margin-right: 10px;
+    background-color: #B73DDB;
+}
+
+.faq-titulo::after{
+    content: "+";
+    float: right;
+    transition: .3s ease;
+}
+
+.faq-conteudo{
+    padding: 10px;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    display: none;
+}
+
+.trigger-input{
+    display: none;
+}
+
+.trigger-input:checked + .trigger-wrapper .faq-conteudo{
+    display: block;
+}
+
+.trigger-input:checked + .trigger-wrapper .faq-titulo::after{
+    transform: rotate(45deg) scale(2);
 }
