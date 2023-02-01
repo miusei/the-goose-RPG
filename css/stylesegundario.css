@@ -92,7 +92,7 @@ section > ol {
 .sectionFAQ{
     text-align: left;
     margin: 5px auto;
-    width: 600px;
+    width: 300px;
     background-color: transparent;
     box-shadow: none;
 }
@@ -101,7 +101,7 @@ section > ol {
     text-align: center;
     background-color: white;
     box-shadow: 1px 1px 1px #da61ff7c;
-    width: 300px;
+    width: 220px;
     padding: 5px;
     border-radius: 5px;
     margin: 5px auto;
@@ -110,7 +110,7 @@ section > ol {
 .lista-item{
     margin-bottom: 10px;
     box-shadow: 1px 1px 1px #da61ff7c;
-    width: 520px;
+    width: 290px;
     background-color: white;
     padding: 5px;
     border-radius: 5px;

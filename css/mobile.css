@@ -66,6 +66,10 @@
 
 /* parte 4 */
 
+#parte4 > div {
+    width: 400px;
+}
+
 .disclaimer{
     width: 650px;
 }
@@ -98,6 +102,19 @@
 .sectionContato{
     width: 768px;
 }
+
+  .sectionFAQ{
+    width: 600px;
+}
+
+.sectionFAQ > h1{
+    width: 300px;
+}
+
+.lista-item{
+    width: 520px;
+}
+
 
 }
 
