@@ -53,20 +53,23 @@ section > ol {
     font-size: 1.1em;
 }
 
-/*Sobre o Foundry/
-/*Video responsivo*/
+/*Sobre o Foundry*/
 
-
-.boxVideo {
-    position: relative;
-    margin:0 auto;
-    text-align: center;
-}
-.boxVideo iframe {
-    width: 250px;
-    height: 150px;
+.listavideo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    padding: 0px;
+    list-style-type: none;
 }
 
+.listavideo-conteudo {
+    height: 450px;
+    width: 300px;
+    flex-grow: 1;
+}
 
 /* Contato */
 
